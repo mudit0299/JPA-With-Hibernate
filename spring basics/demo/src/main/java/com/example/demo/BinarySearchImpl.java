@@ -1,10 +1,14 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class BinarySearchImpl {
-	
+	@Autowired
 	private sortAlgorithm sortAlgorithm;
 	 
-public BinarySearchImpl(com.example.demo.sortAlgorithm sortAlgorithm) {
+public BinarySearchImpl(sortAlgorithm sortAlgorithm) {
 		super();
 		this.sortAlgorithm = sortAlgorithm;
 	}
